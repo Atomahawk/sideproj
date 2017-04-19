@@ -1,34 +1,30 @@
-pip install tweepy
-pip install textblob
-
-python3
+# pip install tweepy
+# pip install textblob
 
 from textblob import TextBlob
 
-# Demo:
+#Piece of text as blob variable
+wiki = TextBlob("Andrew is tired but has to still do these silly exercises")
 
-	#Piece of text as blob variable
-	wiki = TextBlob("Andrew is tired but has to still do these silly exercises")
+#fragment parts of speech using tags attribute
+wiki.tags
 
-	#fragment parts of speech using tags attribute
-	wiki.tags
+#tokenize using words attribute
+wiki.words
 
-	#tokenize using words attribute
-	wiki.words
-
-	# show sentiment polarity on a scale of -1 to 1.
-	wiki.sentiment.polarity
+# show sentiment polarity on a scale of -1 to 1.
+wiki.sentiment.polarity
 
 
-consumer_key = XXTdwvfGWYCM2upkMR8I0hT7g
-consumer_secret = NFl4ZDWh3DasZKJHK6LQlzFfruCoG1FGZVksTWDWKWIStqlDPu
+consumer_key = 'XXTdwvfGWYCM2upkMR8I0hT7g'
+consumer_secret = 'NFl4ZDWh3DasZKJHK6LQlzFfruCoG1FGZVksTWDWKWIStqlDPu'
 
 #access API
-access_token = 4444031112-M79vgAu1pEOyNpcRIQHbE4e4554ULUJMt73uIrG
-access_token_secret = UFzPmArgox7tjHGhcC7PFMOKrNsxOVdGSzv7hmXim3Vy0
+access_token = '4444031112-M79vgAu1pEOyNpcRIQHbE4e4554ULUJMt73uIrG'
+access_token_secret = 'UFzPmArgox7tjHGhcC7PFMOKrNsxOVdGSzv7hmXim3Vy0'
 
 # authentication (login via code)
-auth = tweepy.0AuthHandler(consumer_key,consumer_secret)
+auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_token_secret)
 
 # with API variable, we can do the commented methods
