@@ -16,12 +16,12 @@ wiki.words
 wiki.sentiment.polarity
 
 
-consumer_key = 'XXTdwvfGWYCM2upkMR8I0hT7g'
-consumer_secret = 'NFl4ZDWh3DasZKJHK6LQlzFfruCoG1FGZVksTWDWKWIStqlDPu'
+consumer_key = 'XXX'
+consumer_secret = 'XXX'
 
 #access API
-access_token = '4444031112-M79vgAu1pEOyNpcRIQHbE4e4554ULUJMt73uIrG'
-access_token_secret = 'UFzPmArgox7tjHGhcC7PFMOKrNsxOVdGSzv7hmXim3Vy0'
+access_token = 'XXX'
+access_token_secret = 'XXX'
 
 # authentication (login via code)
 auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
